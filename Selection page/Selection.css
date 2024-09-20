@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'apple SD Gothic Neo, sans-serif';
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family:gilroy ;
+}
+
+
+/* main container body */
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: cornflowerblue;
+    width: 100%;
+    height: 100%;
+}
+/* top heading my tinder */
+#heading{
+    display: flex;
+    justify-content: center;
+    color: lightblue;
+    background-color: cornflowerblue;
+    border: 2px solid;
+    filter: drop-shadow(10px 10px 30px #111);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 3px 3px 5px #111;
+    text-align: center;
+    z-index: 1;
+}
+/* profile display card */
+#card{
+ border-radius:10px;
+ height:475px;
+ width: 350px;
+ background-color: #fff;
+ text-align: center;
+ padding: 30px;
+ filter: drop-shadow(10px 10px 30px #222);
+}
+#card img{
+    border-radius:10px;
+    height: 75%;
+    width: 100%;
+    object-fit:cover;
+    z-index: 0;
+    transition: all 0.8s ease-in;
+    /* object-position: center; */
+}
+#card h1{
+    color: #000100;
+    background-color: silver ;
+    font-size:30px;
+    font-weight: 400;
+    border: 2px solid silver;
+    filter: drop-shadow(5px 5px 15px #222);
+    border-radius: 25px;
+   margin: 7px;
+}
+#card #Status{
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 1px;
+    background-color: transparent;
+    /* border: 2px solid silver; */
+    /* filter: drop-shadow(5px 5px 15px #222); */
+    border-radius: 25px;
+}
+#card button{
+    background-color: cadetblue;
+    color: #fff;
+    font-weight: 700;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border-radius: 10px; 
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px #111;
+    transition: all 0.3s ease-in;
+}
+#card #prop{
+ padding: 10px;
+}
+#card #skip{
+    background-color: grey;
+    padding: 10px 35px;
+}
+
+/* Buttons  */
+
+#btn-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#card button:active{
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* box-shadow: 3px 3px 5px #111; */
+}
+
+
+/* Loading animation */
+.wrapper {
+    display: none;
+    /* border: 2px solid black; */
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(57, 110, 217);
+    left: 15%;
+    transform-origin: 50%;
+    animation: circle7124 .5s alternate infinite ease;
+  }
+  
+  @keyframes circle7124 {
+    0% {
+      top: 60px;
+      height: 5px;
+      border-radius: 50px 50px 25px 25px;
+      transform: scaleX(1.7);
+    }
+  
+    40% {
+      height: 20px;
+      border-radius: 50%;
+      transform: scaleX(1);
+    }
+  
+    100% {
+      top: 0%;
+    }
+  }
+  
+  .circle:nth-child(2) {
+    left: 45%;
+    animation-delay: .2s;
+  }
+  
+  .circle:nth-child(3) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+  
+  .shadow {
+    width: 20px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 62px;
+    transform-origin: 50%;
+    z-index: -1;
+    left: 15%;
+    filter: blur(1px);
+    animation: shadow046 .5s alternate infinite ease;
+  }
+  
+  @keyframes shadow046 {
+    0% {
+      transform: scaleX(1.5);
+    }
+  
+    40% {
+      transform: scaleX(1);
+      opacity: .7;
+    }
+  
+    100% {
+      transform: scaleX(.2);
+      opacity: .4;
+    }
+  }
+  
+  .shadow:nth-child(4) {
+    left: 45%;
+    animation-delay: .2s
+  }
+  
+  .shadow:nth-child(5) {
+    left: auto;
+    right: 15%;
+    animation-delay: .3s;
+  }
+  
+
+/* respone css */
+
+#response{
+    /* display: none; */
+    z-index: 2;
+    position: absolute;
+    /* border: 2px solid silver; */
+    border-radius:10px;
+    height: 75%;
+    width: 80%;
+    object-fit:cover;
+    color: #fff;
+}
+
+ #Rstatus{
+    width: 50%;
+    height: 20%;
+    position: absolute;
+     display: none; 
+     font-size: 30px;
+    font-weight: 200; 
+    top:70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    color: #fff;
+    /* background-color: transparent; */
+    border: 2px solid transparent;
+    border-radius: 25px;
+    /* color: #111; */
+    text-shadow: 2px 2px 3px #111;
+    box-shadow: 3px 3px 5px #111;
+    padding-top: 12px;
+    
+}

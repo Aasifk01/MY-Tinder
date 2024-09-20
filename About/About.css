@@ -1,0 +1,94 @@
+@font-face {
+    font-family: gilroy;
+    src: url(/Gilroy-Bold_JK4cTGJOE.ttf);
+}
+@font-face {
+    font-family: machina;
+    src: url(/3856NeueMachina.ttf);
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:gilroy;
+color: #fff;
+}
+html,body{
+height: 100%;
+width: 100%;
+background-color: #a370f0;
+}
+#App-discription {
+width: 100%;
+height: 80%;
+font-size: 20px;
+letter-spacing: 2px;
+/* border: 2px solid #9ae975; */
+}
+#App-discription h1{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: machina;
+    margin: 20px 15px;
+    border: 1px solid #fff8a8;
+    filter: drop-shadow(12px 20px 3.5px #222);
+}
+#App-discription p{
+    font-size: 20px;
+    padding: 20px 15px;
+    font-family: gilroy;
+    color: #000;
+    margin-top: 45px;
+}
+#App-discription p b{
+    color: #9ae975;
+    font-family: machina;
+}
+#App-discription p i{
+    font-size: 25px; 
+    color: #9ae975;
+    font-family: machina;
+}
+#App-discription p em{ 
+    font-size: 30px;
+    color: #7f7f7f;
+    font-family: Machina;
+}
+#Images{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 18px;
+    /* border: 2px solid #9ae975; */
+}
+#Images img{
+ height: 300px;
+ width: 300px;
+ object-fit: cover;
+ filter: drop-shadow(15px 15px 3.5px #222);
+ margin: 20px 25px;
+}
+#lines{
+    display: flex;
+    /* right: 50%; */
+    
+}
+#lines ul{
+    font-family: machina;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 20px 15px;
+    font-family: gilroy;
+    color: #000;
+    margin-top: 45px;
+    list-style:circle;
+    list-style-position: inside;
+}
+#lines ul li{
+    color: #222;
+    margin: 20px 15px;
+    filter: drop-shadow(5px 5px 5px #222);
+}
